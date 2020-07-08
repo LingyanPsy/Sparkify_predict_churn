@@ -84,6 +84,7 @@ Then I plotted these features' relationship with churn rate and performed prelim
 - different page visiting frequency(Downgrade, Error, Home, Logout, NextSong etc.)
 
 **Modelling**
+
 As it is a classification problem(churn/not churn)-LogisticRegression,RandomForest and GradientBoost algorithms have been used. F1 score is used as metric as only 23% of users churned.
 
 ### Results and Discussions
