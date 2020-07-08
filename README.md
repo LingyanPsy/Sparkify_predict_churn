@@ -24,7 +24,7 @@ Additionally, the ability to efficiently manipulate large datasets with Spark is
 Sparkify is a fictional music streaming platform created by Udacity. For this project we are given log data of this platform in order to drive insights and create a machine learning pipeline to predict churn. This project utilizes the 128Mb data in Spark local mode which can be scaled up when using the full dataset (12GB).
 
 ### File Descriptions
-* sparkify.ipynb - A notebook with feature engineering and modelling
+* Sparkify_churn.ipynb - A notebook with feature engineering and modelling
 * FeatureVisualizations - a folder containing visualisations of results of feature explorations
 
 ### Analysis Steps
@@ -71,7 +71,7 @@ Second, I engineered different features that could possible influence churn rate
 - total registration days 
 - session frequency: session count/registration days 
 
-Then I plotted these features' relationship with churn rate and performed preliminary statistical analysis (see Sparkify.ipynb and Figures folder). Some turns out to be not effective on user churn rate, such as average session length, location etc. Therefore, after eliminating some features and added some new ones, the following features are used for the final model:
+Then I plotted these features' relationship with churn rate and performed preliminary statistical analysis (see Sparkify_churn.ipynb and Figures folder). Some turns out to be not effective on user churn rate, such as average session length, location etc. Therefore, after eliminating some features and added some new ones, the following features are used for the final model:
 - artist count
 - song count 
 - largest gap between visits  
@@ -99,7 +99,7 @@ were tuned.
 
 Using gridsearch, the best parameters are 
 
-The top 5 important features are (feature importance plot in Figures folder) :
+The top 5 important features are (feature importance plot in Sparkify_churn.ipynb) :
 1.	soung_count
 2.	total_length
 3.  submit_downgrade
