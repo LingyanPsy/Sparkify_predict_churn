@@ -50,6 +50,7 @@ Raw datasets contains the following sub-fields:
 - length : length of item
 
 **Data Cleaning**
+
 Summarize null rate in each sub-fields. Remove items with blank 'userId'.
 
 **Exploratary Analysis and feature engineering**
@@ -105,6 +106,7 @@ The top 5 important features are (feature importance plot in Figures folder) :
 5.	reg_days
 
 **Hyperparameter tuning**
+
 Since the logistic regression model performed best, I further improved the model with parameter tuning using Grid Search. Due to the limit of computer power, two parameters 1) regParam ([0.1,0.01]) and 2) fitIntercept ([True, False]) were searched. The result model performance is slightly improved.
 | Model |F1 score |
 | --- | --- |
@@ -114,6 +116,7 @@ Since the logistic regression model performed best, I further improved the model
 | Decision Tree | 64.77% |
 
 **Discussion**
+
 The current model is not perfect, partly because it's only a mini-set of the full dataset (12GB). Here are several ways to improve model in the future:
 1. The current model is limited by the computing power, thus used a very limited set in GridSearch. This could be improved using cloud computing techniques such as AWS or IBM. 
 2. Most of the features didn't contribute much to the model. These features could be replaced with other features we haven't thought of. 
